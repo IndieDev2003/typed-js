@@ -1,19 +1,20 @@
-import React from 'react'
-import Letter from './pages/Letter'
-import Next from './pages/Next'
-import { Route, RouterProvider, Routes } from 'react-router-dom'
+import React from "react";
+import Letter from "./pages/Letter";
+import Next from "./pages/Next";
+import Home from "./pages/Home";
+import { Route, RouterProvider, Routes, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className='h-screen w-screen'>
+    <div className="">
+     
       <Routes>
-        <Route path='/letter' element={<Letter />} />
-        <Route path='/next' element={<Next />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/letter" element={<Letter />} />
+        <Route path="/next" element={<Next />} />
       </Routes>
-      
-      
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
