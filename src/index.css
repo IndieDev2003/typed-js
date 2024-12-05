@@ -12,3 +12,7 @@
 .outfit{
     font-family: Outfit;
 }
+
+::-webkit-scrollbar{
+    display: none !important;
+}
