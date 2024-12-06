@@ -23,7 +23,7 @@ function TestCom() {
       ease:'power.in',
       scrollTrigger: {
         trigger: page2.current,
-        start: "top 90% ",
+        start: "top 90%",
         end: "top 20%",
         markers: true,
           scrub: true,
