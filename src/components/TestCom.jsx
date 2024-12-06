@@ -27,7 +27,7 @@ function TestCom() {
         end: "top 20%",
         markers: true,
           scrub: true,
-        toggleActions: "restart pause reverse pause"
+       // toggleActions: "restart pause reverse pause"
         //   toggleActions: "restart pause reverse pause"
       },
     });
