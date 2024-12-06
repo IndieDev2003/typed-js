@@ -12,21 +12,21 @@ function TestCom() {
   const page2 = useRef(null);
 
   useGSAP(() => {
-    const tl = gsap.timeline();
+  //  const tl = gsap.timeline();
 
-    tl.from(page2.current, {
-      opacity: 0,
-      duration: 0.5,
-      delay: 0,
-      x:0,
-        stagger: 1,
-      ease:'power.in',
-      scrollTrigger: {
-        trigger: page2.current,
-        start: "top 90%",
-        end: "bottom 100%",
-        markers: true,
-          scrub: true,
+  //  tl.from(page1.current, {
+    //  opacity: 0,
+   //   duration: 0.5,
+   //   delay: 0,
+  //    x:0,
+   //     stagger: 1,
+     // ease:'power.in',
+  //    scrollTrigger: {
+  //      trigger: page2.current,
+  //      start: "top 90%",
+  //      end: "bottom 100%",
+   //     markers: true,
+   //       scrub: true,
        // toggleActions: "restart pause reverse pause"
         //   toggleActions: "restart pause reverse pause"
       },
