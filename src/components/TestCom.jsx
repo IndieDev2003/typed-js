@@ -24,7 +24,7 @@ function TestCom() {
       scrollTrigger: {
         trigger: page2.current,
         start: "top 90%",
-        end: "end 100%",
+        end: "bottom 100%",
         markers: true,
           scrub: true,
        // toggleActions: "restart pause reverse pause"
