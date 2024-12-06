@@ -49,8 +49,8 @@ function TestCom() {
         </div>
       </div>
       <div
-        id="page2 "
-        ref={page2}
+       
+        ref={}
         className="h-screen w-screen flex flex-col gap-4 sm:flex-rw items-center justify-start px-4"
       >
         <h2 className="text-4xl">Page 2 Content</h2>
