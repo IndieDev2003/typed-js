@@ -5,11 +5,11 @@ import { ReactTyped } from "react-typed";
 function Hero() {
 
   const navigete = useNavigate()
-  const text = ["Web", "World", "Devloper", "You"];
+  const text = ["the Web", "the World", "the Devlopers", "You"];
   return (
     <div className="h-[90vh] w-[100vw] flex flex-col items-center text-center justify-center gap-6 outfit bg-black overflow-hidden">
       <h2 className="text-4xl w-[90vw] sm:text-5xl font-semibold text-gray-300">
-        The React Framework for the{" "}
+        The React Framework for {" "}
         <ReactTyped
           strings={text}
           loop={true}
@@ -27,7 +27,7 @@ function Hero() {
         </span>
         with the power of React components.
       </p>
-      <div className="flex gap-2 font-semibold">
+      <div className="flex gap-2 font-semibold ">
         <button className="bg-white hover:bg-gray-200 border px-5 py-3 rounded-lg outline-none">
           Get Started
         </button>
