@@ -17,8 +17,8 @@ function TestCom() {
     tl.from(page2.current, {
       opacity: 0,
       duration: 2,
-      delay: 1,
-      x: 0,
+      delay: 0,
+      x: 1000,
         stagger: 1,
       ease:'power.in',
       scrollTrigger: {
