@@ -16,7 +16,7 @@ function TestCom() {
 
     tl.from(page2.current, {
       opacity: 0,
-      duration: 2,
+      duration: 0.5,
       delay: 0,
       x: 1000,
         stagger: 1,
