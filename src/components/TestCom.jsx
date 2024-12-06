@@ -33,7 +33,7 @@ function TestCom() {
     });
   }, []);
   return (
-    <div className="outfit h-screen w-screen overflow-xhidden">
+    <div className="outfit h-screen w-screen overflow-x-hidden">
       <div ref={page1} id="page1">
         <div className="flex flex-col h-screen gap-4 items-center justify-center">
           <h2 className="text-5xl sm:text-6xl">Hello GSAP</h2>
