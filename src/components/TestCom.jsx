@@ -11,7 +11,7 @@ function TestCom() {
   const page1 = useRef(null);
   const page2 = useRef(null);
 
-  useGSAP(() => {
+//  useGSAP(() => {
   //  const tl = gsap.timeline();
 
   //  tl.from(page1.current, {
@@ -29,9 +29,9 @@ function TestCom() {
    //       scrub: true,
        // toggleActions: "restart pause reverse pause"
         //   toggleActions: "restart pause reverse pause"
-      },
-    });
-  }, []);
+  //    },
+ //   });
+//  }, []);
   return (
     <div className="outfit h-screen w-screen overflow-x-hidden">
       <div ref={page1} id="page1">
