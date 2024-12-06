@@ -2,7 +2,7 @@ import React from "react";
 import Letter from "./pages/Letter";
 import Next from "./pages/Next";
 import Home from "./pages/Home";
-import { Route, RouterProvider, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
