@@ -18,7 +18,7 @@ function TestCom() {
       opacity: 0,
       duration: 0.5,
       delay: 0,
-      x: 1000,
+      x: -100,
         stagger: 1,
       ease:'power.in',
       scrollTrigger: {
