@@ -23,8 +23,8 @@ function TestCom() {
       ease:'power.in',
       scrollTrigger: {
         trigger: page2.current,
-        start: "end 90% ",
-        end: "center center",
+        start: "top 90% ",
+        end: "top 20%",
         markers: true,
           scrub: true,
         toggleActions: "restart pause reverse pause"
