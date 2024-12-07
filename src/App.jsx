@@ -3,7 +3,8 @@ import Letter from "./pages/Letter";
 import Next from "./pages/Next";
 import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
-import TestCom from "./components/TestCom";
+
+import TestPage from "./pages/TestPage";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
     //   </Routes>
     // </div>
     <div>
-      <TestCom/>
+      <TestPage/>
     </div>
   );
 }
