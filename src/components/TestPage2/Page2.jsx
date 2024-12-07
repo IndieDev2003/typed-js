@@ -23,7 +23,7 @@ function Page2() {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: page2Ref.current,
-          markers: true,
+        //   markers: true,
           start: "top 70%",
           end: "bottom 100%",
           scrub: true,
