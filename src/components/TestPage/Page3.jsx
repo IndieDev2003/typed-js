@@ -51,7 +51,11 @@ function Page3() {
   return (
     <div
       ref={page3Ref}
+<<<<<<< HEAD
       className=" bg-gray-200 py-5 sm:py-10 px-5 sm:px-10"
+=======
+      className="h-screen w-screen bg-gray-200 py-5 sm:py-10 px-5 sm:px-10"
+>>>>>>> dac0413856b9d1d78b12526df72b7094b1d73f49
     >
       <div className="page3-head flex flex-col items-end gap-3">
         <h2 className="text-2xl sm:text-4xl">You Again Why</h2>
