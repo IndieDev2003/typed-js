@@ -4,6 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    background-color: aliceblue !important;
+}
 
 .letter{
     font-family: 'Caveat', cursive;
