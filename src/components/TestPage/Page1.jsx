@@ -10,7 +10,10 @@ function Page1() {
   const pageRef = useRef(null);
   useGSAP(
     () => {
-      const tl = gsap.timeline();
+      const tl = gsap.timeline({
+        delay: 2,
+        
+      });
       tl.from(".page1 h1", {
         scale: 1000,
         duration: 2,
