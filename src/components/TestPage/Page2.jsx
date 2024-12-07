@@ -46,6 +46,19 @@ function Page2() {
       tl.to(".infoCon", {
         y: 50,
       });
+      tl.from(".infoCon div h3", {
+        opacity: 0,
+        y: 20,
+        stagger: 1,
+        ease: "elastic.inOut",
+      })
+      tl.from(".infoCon div p", {
+        opacity: 0,
+        y: 20,
+        stagger: 0.5,
+        ease: "elastic.inOut",
+        
+      })
       tl.to("h2", {
         zoom: 1.4,
         y: 10,
