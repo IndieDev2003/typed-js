@@ -17,6 +17,7 @@ function Page1() {
       tl.from(".page1 h1", {
         scale: 1000,
         duration: 2,
+        delay: 1
       });
 
       tl.from(".page1 p", {
