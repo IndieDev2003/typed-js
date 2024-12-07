@@ -24,19 +24,21 @@ function Page2() {
       });
 
       tl.from(".page2-head h2", {
-        x: 1000,
+        x: 2000,
         duration: 1.5,
+        yoyo:true
       });
       tl.from(".page2-head p", {
         opacity: 0,
+        x:2000
       });
 
-      tl.from(".info", {
+      tl.from(".infoCon .info", {
         x: 200,
         opacity: 0,
         duration: 1,
         stagger: 0.5,
-        ease: "bounce.in",
+        ease: "bounce",
       });
       tl.to(".page2-head", {
         y: 50,
@@ -59,7 +61,7 @@ function Page2() {
   );
 
   return (
-    <div ref={pageRef} className="h-screen w-screen px-10">
+    <div ref={pageRef} className="h-fit w-screen px-10 bg-gray-500 py-10">
       <div className="page2-head">
         <h2 className="text-3xl flex items-center justify-center sm:justify-start">
           Hello Again
@@ -68,7 +70,7 @@ function Page2() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, impedit.
         </p>
       </div>
-      <div className="infoCon grid sm:grid-cols-3 grid-cols-1 gap-2 mt-10 pb-10">
+      <div className="h-fit infoCon grid sm:grid-cols-3 grid-cols-1 gap-2 mt-10 mb-10">
         <div className="info sm:w-[30vw] px-4 py-10 border-2 bg-white border-black rounded">
           <h3>Placeholder</h3>
           <p className="">
