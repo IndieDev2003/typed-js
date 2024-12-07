@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 function Page1() {
-  const pageRef = useRef(null);
+  const pageRef = useRef(null)
 
   useGSAP(
     () => {

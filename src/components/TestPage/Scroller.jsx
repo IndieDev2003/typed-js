@@ -78,14 +78,14 @@ function Scroller({ sentence }) {
     }
   },[]);
 
-  console.log(sentence);
+  
 
   useGSAP(() => {
     // const totalWidth = ref.scrollWidth
     gsap.to(".scroller", {
-      x: -1000,
+      x: -2000,
       yoyo: true,
-      duration: 10,
+      duration: 20,
       // ease: "power1.out",
       stagger: 0.5,
       repeat: -1,
@@ -103,7 +103,7 @@ function Scroller({ sentence }) {
         return (
           <p
             key={index}
-            className="text-center text-2xl sm:text-3xl font-medium text-black "
+            className=" text-center text-2xl sm:text-3xl font-medium text-black capitalize"
           >
             {title}
           </p>

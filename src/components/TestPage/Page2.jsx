@@ -46,6 +46,19 @@ function Page2() {
       tl.to(".infoCon", {
         y: 50,
       });
+      tl.from(".infoCon div h3", {
+        opacity: 0,
+        y: 20,
+        stagger: 1,
+        ease: "elastic.inOut",
+      })
+      tl.from(".infoCon div p", {
+        opacity: 0,
+        y: 20,
+        stagger: 0.5,
+        ease: "elastic.inOut",
+        
+      })
       tl.to("h2", {
         zoom: 1.4,
         y: 10,
@@ -61,11 +74,7 @@ function Page2() {
   );
 
   return (
-<<<<<<< HEAD
     <div ref={pageRef} className="h-fit  px-10 bg-gray-500 py-10">
-=======
-    <div ref={pageRef} className="h-fit w-screen px-10 bg-gray-500 py-10">
->>>>>>> dac0413856b9d1d78b12526df72b7094b1d73f49
       <div className="page2-head">
         <h2 className="text-3xl flex items-center justify-center sm:justify-start">
           Hello Again
