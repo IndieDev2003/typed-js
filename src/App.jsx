@@ -5,8 +5,13 @@ import Home from "./pages/Home";
 import { Route, Routes } from "react-router-dom";
 
 import TestPage2 from "./pages/TestPage2";
+import NewYear from "./pages/NewYear";
+
+
+import gsap from "gsap";
 
 function App() {
+  gsap.config({trialWarn:false})
   return (
     // <div className="">
      
@@ -17,7 +22,7 @@ function App() {
     //   </Routes>
     // </div>
     <div>
-      <TestPage2/>
+      <NewYear/>
     </div>
   );
 }

@@ -23,7 +23,7 @@ function Page2() {
       const tl2 = gsap.timeline({
         scrollTrigger: {
           trigger: page2Ref.current,
-        //   markers: true,
+          //   markers: true,
           start: "top 70%",
           end: "bottom 100%",
           scrub: true,
@@ -49,18 +49,17 @@ function Page2() {
 
       tl2.to(".boxCon .box", {
         opacity: 1,
-        borderRadius: 20,
+
         // rotate: 10,
         backgroundImage:
           "url(https://i.pinimg.com/1200x/c8/48/0f/c8480f99fe46235fb40a09f1cd93d9db.jpg)",
       });
       tl2.to(".boxCon .box", {
-        //   rotate: -10,
         height: "100vh",
         width: "100vw",
-        // scale: 3.5,
+        borderRadius: 0,
       });
-      tl2.to(".page2 h2,p", {
+      tl2.to(".page2 h2,.page2 p", {
         color: "white",
       });
     },
@@ -71,17 +70,21 @@ function Page2() {
     <>
       <div
         ref={page2Ref}
-        className="overflow-hid relative page2 h-screen w-screen flex flex-col justify-between"
+        className="page2 overflow-hid relative page2 h-screen w-screen flex flex-col justify-between"
       >
         {/* Left Side */}
-        <div className=" flex flex-col items-start justify-center h-[50%] px-10">
-          <h2 className="h2-left text-3xl"></h2>
-          <p className="p-left max-w-[50vw]"></p>
+        <div className=" flex flex-col items-start justify-center h-[50%] ">
+          <div className="page2 flex flex-col items-start justify-center px-10 w-[50vw] backdrop-blur-sm h-full">
+            <h2 className="h2-left text-3xl"></h2>
+            <p className="p-left max-w-[50vw]"></p>
+          </div>
         </div>
         {/* Right Side */}
-        <div className=" flex flex-col items-end justify-center h-[50%] px-10">
-          <h2 className="h2-right text-3xl"></h2>
-          <p className="p-right text-end max-w-[50vw]"></p>
+        <div className=" flex flex-col items-end justify-center h-[50%]">
+          <div className="flex flex-col items-end justify-center px-10 w-[50vw] backdrop-blur-sm h-full">
+            <h2 className="h2-right text-3xl"></h2>
+            <p className="p-right text-end max-w-[50vw]"></p>
+          </div>
         </div>
         <div className="boxCon h-screen w-screen absolute -z-10 bg-ed-300 flex items-center justify-center">
           <div id="" className="box h-40 w-40  bg-cover bg-center"></div>
